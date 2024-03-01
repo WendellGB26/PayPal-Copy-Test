@@ -30,14 +30,14 @@ const DragandDrop = () => {
       onDrop={handleDrop}
     >
       <div
-        className="draggable-item"
+        className="draggable-item bg-red"
         draggable
         onDragStart={handleDragStart}
         onDragEnd={handleDragEnd}
       >
-        Drag me!
+        <p className='text-black'>Drag me!</p>
       </div>
-      {dragging && <div className="drop-here">Drop here</div>}
+      {dragging && <div className="drop-here"> <p className='text-black'>Drop here</p></div>}
     </div>
   );
 };
